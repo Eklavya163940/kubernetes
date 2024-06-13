@@ -1,0 +1,46 @@
+1) How many pods exist on the system?
+
+    **kubectl get pods**
+
+2) Create a new pod with the nginx image.
+
+    **kubectl run nginx --image=nginx**
+
+3) How many pods are created now?
+
+    **kubectl get pods**
+
+4) What is the image used to create the new pods?
+
+    **kubectl describe pods newpods**
+
+5) On which node is the container running
+     **kubectl describe pods newpods**( look in the node value)
+    ans)  controleplane
+
+6)  How many containers are part of the pod webapp?
+
+    **kubectl describe pod webapp**( look in the container dictionary)
+
+7) What images are used in the new webapp pod?
+
+    **kubectl describe pod webapp**
+
+8) Delete the webapp Pod.
+
+    **kubectl delete pod webapp**
+
+9) Create a new pod with the name redis and the image redis123.
+
+    **kubectl run redis --image=redis123**
+
+10) Now change the image on this pod to redis.Once done, the pod should be in a running state.
+
+    **kubectl edit pod redis** = to let you edit the pod
+
+    kubectl apply -f redis-defination.yml : this will aplly the changess
+
+
+
+
+
