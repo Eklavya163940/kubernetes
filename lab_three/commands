@@ -1,0 +1,51 @@
+1) How many PODs exist on the system?
+
+ **kubectl get pods**
+
+
+
+ 2) How many ReplicaSets exist on the system?
+
+  **kubectl get replicaset**
+
+
+
+3) How many Deployments exist on the system?
+
+  **kubectl get deployments**
+
+
+
+4) How many Deployments exist on the system now? We just created a Deployment! Check again!
+
+  **kubectl get deployments**
+
+
+
+5) How many ReplicaSets exist on the system now?
+
+  **kubectl get replicaset**
+
+
+
+6) How many PODs exist on the system now?
+
+  **kubectl get pods**
+
+
+
+7) What is the image used to create the pods in the new deployment?
+
+  **kubectl describe deployments**
+
+
+8) Create a new Deployment using the deployment-definition-1.yaml file located at /root/.There is an issue with the file, so try to fix it.
+ 
+  **kubectl explain deployment | head -n1**
+
+
+* after changes
+
+  **kubectl create -f deployment-definition-1.yaml** 
+
+
